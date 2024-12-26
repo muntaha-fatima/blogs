@@ -1,101 +1,144 @@
-import Image from "next/image";
 
-export default function Home() {
+
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+
+// const blogdata = [
+//   {
+//     id: '1',
+//     title: 'Html',
+//     summary: ' the fundamentals of Next.js, the React-based framework.',
+//     image:"/image/Basic-HTML-Codes-for-Websites.webp",
+//   },
+//   {
+//     id: '2',
+//     title: 'Dynamic Routing',
+//     summary: 'Understand how dynamic routing works in Next.js.',
+//     image:"/image/images css.png",
+//   },
+//   {
+//     id: '3',
+//     title: 'Mastering TypeScript for Web Development',
+//     summary: 'Discover the power of static site generation with Next.js.',
+//     image: "/image/benefits_of_typescript_without_typescript_blog_index.webp",
+//   },
+//   {
+//     id: '4',
+//     title:'Next.js Basics',
+//     summary: 'Discover the power of static site generation with Next.js.',
+//     image: "/image/1696065152678 (1).png",
+//   },
+//   {
+//     id: '5',
+//     title:'Next.js Basics',
+//     summary: 'Discover the power of static site generation with Next.js.',
+//     image: "/image/beginners-python-programming.2e16d0ba.fill-2400x858-c100.jpg",
+//   },
+//   {
+//     id: '6',
+//     title:'Next.js Basics',
+//     summary: 'Discover the power of static site generation with Next.js.',
+//     image: "/image/ai_symbol.jpg",
+//   },
+  
+
+// ];
+
+
+
+
+const HomePage = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="font-sans ">
+      <header className="text-center py-10 px-4">
+        <h1 className="text-3xl sm:text-4xl lg:text-2xl font-bold  dark:text-white">
+          The Future of AI and the Programming Languages Powering It
+        </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="relative mx-auto mt-8 w-full sm:w-[700px] h-[300px]">
+          <Image
+            src="/image/depositphotos_706100080-stock-illustration-colorful-neon-light-purple-blue.jpg"
+            alt="AI technology"
+            layout="fill" 
+            objectFit="cover"
+            className="rounded-lg" 
+          />
+          <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-1xl sm:text-3xl font-semibold text-center">
+            <h1 className="text-base sm:text-base lg:text-base lg:mb-4">
+              AI in the Future: Exploring how languages from HTML to Python are shaping the AI landscape.
+            </h1>
+            <Link href="blog">
+              <button className="bg-white text-base sm:text-lg px-7 py-3 rounded-full font-bold text-black">
+                Explore Blogs
+              </button>
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+  
+        <div className="bg-[#1d1375] text-gray-200 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#fffbfb] mb-4">
+            The Evolution of Programming Languages in AI
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg">
+            Programming languages like HTML, CSS, and JavaScript have evolved to support the growing needs of AI. Today, languages like Python, R, and TypeScript are at the forefront of AI development.
+          </p>
+        </div>
+
+        <div className="bg-[#1d1375] text-gray-200 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#fffbfb] mb-4">
+            HTML, CSS, and TypeScript: The Foundations of AI Web Development
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg">
+            While HTML and CSS are essential for structuring web pages, TypeScript enhances JavaScript by adding static typing, making it ideal for building robust AI-driven web applications.
+          </p>
+        </div>
+
+        
+        <div className="bg-[#1d1375] text-gray-200 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#fffbfb] mb-4">
+            Next.js: Powering AI-driven Web Apps
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg">
+            Next.js offers a modern framework that enables server-side rendering and static site generation, perfect for AI-driven web applications that require seamless integration with APIs.
+          </p>
+        </div>
+
+
+        <div className="bg-[#1d1375] text-gray-200 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#fffbfb] mb-4">
+            Python: The Backbone of AI Programming
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg">
+            Python is the most widely used language in AI development, thanks to its rich ecosystem of libraries like TensorFlow and PyTorch that simplify the creation of AI models.
+          </p>
+        </div>
+
+ 
+        <div className="bg-[#1d1375] text-gray-200 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#fffbfb] mb-4">
+            Global Trends in Programming Languages for AI
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg">
+            Languages like Python and Rust are gaining popularity for their efficiency in handling complex computations, making them essential in the development of AI applications.
+          </p>
+        </div>
+
+
+        <div className="bg-[#1d1375] text-gray-200 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#fffbfb] mb-4">
+            AI Programming Languages: Beyond the Basics
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg">
+            The future of AI programming lies in languages like Rust and Julia, which provide high performance and scalability for complex AI tasks.
+          </p>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
-}
+};
+
+export default HomePage;
