@@ -4,50 +4,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-// const blogdata = [
-//   {
-//     id: '1',
-//     title: 'Html',
-//     summary: ' the fundamentals of Next.js, the React-based framework.',
-//     image:"/image/Basic-HTML-Codes-for-Websites.webp",
-//   },
-//   {
-//     id: '2',
-//     title: 'Dynamic Routing',
-//     summary: 'Understand how dynamic routing works in Next.js.',
-//     image:"/image/images css.png",
-//   },
-//   {
-//     id: '3',
-//     title: 'Mastering TypeScript for Web Development',
-//     summary: 'Discover the power of static site generation with Next.js.',
-//     image: "/image/benefits_of_typescript_without_typescript_blog_index.webp",
-//   },
-//   {
-//     id: '4',
-//     title:'Next.js Basics',
-//     summary: 'Discover the power of static site generation with Next.js.',
-//     image: "/image/1696065152678 (1).png",
-//   },
-//   {
-//     id: '5',
-//     title:'Next.js Basics',
-//     summary: 'Discover the power of static site generation with Next.js.',
-//     image: "/image/beginners-python-programming.2e16d0ba.fill-2400x858-c100.jpg",
-//   },
-//   {
-//     id: '6',
-//     title:'Next.js Basics',
-//     summary: 'Discover the power of static site generation with Next.js.',
-//     image: "/image/ai_symbol.jpg",
-//   },
-  
-
-// ];
-
-
-
-
 const HomePage = () => {
   return (
     <div className="font-sans ">
