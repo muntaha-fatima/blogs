@@ -1,92 +1,94 @@
 
-import Link from "next/link";
 import React from "react";
 
-// import { AiFillTwitterCircle } from "react-icons/ai";
-// import { FaFacebook } from "react-icons/fa";
-// import { FaInstagramSquare } from "react-icons/fa";
-// import { IoLogoGithub } from "react-icons/io";
 export default function Footer() {
   return (
-    <footer className="relative mt-40 bg-white text-black px-6 sm:px-10 md:px-20 lg:px-44 py-10">
+    <footer className="bg-gray-100 text-gray-800 py-10 sm:py-12 px-6 sm:px-16 md:px-32">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-16">
         <div>
-        <div className="flex items-center  text-2xl font-bold -ml-16 gap-1">
-            <span className="bg-gradient-to-r from-[#22b9ff] to-[#58a8c7] text-transparent bg-clip-text"> [The  </span>
-            <span className="bg-gradient-to-r from-[#85b5cd] to-[#9396c4] text-transparent bg-clip-text">BLOGS  </span>
-            <span className="bg-gradient-to-r from-[#22bdff] to-[#5a8eca] text-transparent bg-clip-text">ARCHITECT]</span>
-          </div>
-  
-          <div className="flex gap-3 mt-6">
-            <Link href="#" target="_blank">
-            {/* <AiFillTwitterCircle /> */}
-            </Link>
-            <Link href="#" target="_blank">
-             
-              {/* <FaFacebook /> */}
-            </Link>
-            <Link href="#" target="_blank">
-              
-              {/* <FaInstagramSquare /> */}
-            </Link>
-            <Link href="#" target="_blank">
-             
-              {/* <IoLogoGithub /> */}
-            </Link>
-          </div>
-        </div>
-
-        {/* Company Links */}
-        <div>
-          <h4 className="text-lg font-bold">Company</h4>
-          <ul className="mt-4 text-gray-600 space-y-2">
-            <li>About</li>
-            <li>Features</li>
-            <li>Works</li>
-            <li>Career</li>
-          </ul>
-        </div>
-
-        {/* Help Links */}
-        <div>
-          <h4 className="text-lg font-bold">Help</h4>
-          <ul className="mt-4 text-gray-600 space-y-2">
-            <li>Customer Support</li>
-            <li>Delivery Details</li>
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
-
-        {/* FAQ Links */}
-        <div>
-          <h4 className="text-lg font-bold">FAQ</h4>
-          <ul className="mt-4 text-gray-600 space-y-2">
-            <li>Account</li>
-            <li>Manage Deliveries</li>
-            <li>Order</li>
-            <li>Payment</li>
-            <li>Status</li>
-          </ul>
-        </div>
-
-        {/* Resources Links */}
-        <div>
-          <h4 className="text-lg font-bold">Resources</h4>
-          <ul className="mt-4 text-gray-600 space-y-2">
-            <li>Free Books</li>
-            <li>Development Tutorials</li>
-            <li>How-to Blogs</li>
-            <li>YouTube Playlist</li>
-          </ul>
+          <h1 className="text-2xl font-bold text-gray-900">
+            <span className="text-blue-500">The</span>{" "}
+            <span className="text-gray-600">Blogs</span>{" "}
+            <span className="text-blue-400">Architect</span>
+          </h1>
+          <p className="mt-4 text-sm text-gray-600">
+            Discover ideas, share stories, and build a world of insights with us.
+          </p>
          
         </div>
-      </div>
 
-     
-      <a
-      href="https://instagram.com"
+
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800">Company</h4>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li className="hover:text-blue-500">
+                About Us
+          
+            </li>
+            <li
+            className="hover:text-blue-500">
+                Features
+ 
+            </li>
+            <li
+         className="hover:text-blue-500">
+                How it Works
+         
+            </li>
+            <li
+         className="hover:text-blue-500">
+                Careers
+        
+            </li>
+          </ul>
+        </div>
+
+   
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800">Help</h4>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li
+            className="hover:text-blue-500">
+                Customer Support
+         
+            </li>
+            <li
+         className="hover:text-blue-500">
+                Delivery Information
+       
+            </li>
+            <li
+        className="hover:text-blue-500">
+                Terms & Conditions
+        
+            </li>
+            <li
+            className="hover:text-blue-500">
+                Privacy Policy
+       
+            </li>
+          </ul>
+        </div>
+
+      
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800">Contact Us</h4>
+          <p className="mt-4 text-sm">
+            Email:{" "}
+            <a href="mailto:contact@blogarchitect.com" className="text-blue-500 hover:underline">
+         shazsabir6@gmail.com
+            </a>
+          </p>
+          <p className="mt-2 text-sm">
+            Phone:{" "}
+            <a href="tel:+123456789" className="text-blue-500 hover:underline">
+              +1 234 567 89
+            </a>
+          </p>
+          <div className="flex gap-4 mt-6">
+          <a
+   href="https://www.instagram.com/seeratfatima39/profilecard/?igsh=YTBrMjIwNWpwanJ3"
       target="_blank"
       rel="noopener noreferrer"
       className="flex justify-center  text-pink-500 hover:text-pink-500 transition-colors duration-200"
@@ -101,7 +103,7 @@ export default function Footer() {
       </svg>
     </a>
     <a
-      href="https://github.com"
+      href="https://github.com/account"
       target="_blank"
       rel="noopener noreferrer"
       className=" flex justify-center text-black hover:text-black transition-colors duration-200"
@@ -116,7 +118,7 @@ export default function Footer() {
       </svg>
     </a>
     <a
-      href="https://linkedin.com"
+      href="https://www.linkedin.com/in/seerat-fatima-9281892b6"
       target="_blank"
       rel="noopener noreferrer"
       className=" flex justify-center text-blue-500 hover:text-blue-700 transition-colors duration-200"
@@ -131,27 +133,35 @@ export default function Footer() {
       </svg>
     </a>
     
-      <div className="mt-10 border-t border-gray-300"></div>
+          </div>
+         
+        </div>
 
-     
-      <div className="mt-6 text-sm text-gray-500">
-         <div className="flex space-x-2 my-9">
-        
-       
+  
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800">Stay Updated</h4>
+          <p className="mt-4 text-sm text-gray-600">
+            Subscribe to our newsletter for the latest blogs and updates.
+          </p>
+          <form className="mt-4">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+            />
+            <button
+              type="submit"
+              className="mt-3 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
-        &copy; 2024 Seerat Fatima. All rights reserved.
-        
-      </div>
-      <div className="flex justify-end -mt-5 ">
-        
-   
-      
+
+      <div className="mt-10 text-center text-sm text-black font-bold">
+        © 2024 The Blogs Architect. All Rights Reserved.
       </div>
     </footer>
   );
 }
-
-
-
-
-
